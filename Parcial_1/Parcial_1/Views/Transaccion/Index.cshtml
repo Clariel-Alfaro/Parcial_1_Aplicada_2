@@ -1,0 +1,31 @@
+﻿@model Parcial_1.Models.ViewModels.TransaccionViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("IndexV", "Transaccion", FormMethod.Post))
+{
+
+
+    <h2>CAJERO AUTOMATICO</h2>
+
+
+
+    @Html.LabelFor(m => m.Monto)
+    <br />
+    @Html.TextBoxFor(m => m.Monto)
+    <br />
+    @Html.ValidationMessageFor(m => m.Monto, null)
+
+    <br />
+    <input type="submit" />
+
+}
+
+
+
+
+
+
+
